@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.header {
+
+    overflow: hidden;
+    background-color: rgb(189, 64, 64);
+    position: sticky;
+    top: 0;
+    max-height: 70px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+/* Style the logo box */
+.logo {
+    width: 60vw;
+
+}
+
+/* Style the header */
+.logo img {
+    width: 60px;
+    height: 60px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+}
+
+/* Style the navigation bar area */
+.nav-bar {
+    font-weight: 600;
+
+}
+
+nav>ul {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+
+}
+
+.nav-link a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-link a:hover {
+    background-color: #ddd;
+    color: black;
+
+}
+
+/* Style the content */
+.content {
+    background-color: #ddd;
+    padding: 10px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.card_content {
+    padding: 0.5rem 1rem 1rem;
+    color: darkslateblue;
+}
+
+
+/* Style the card titles (underscore) */
+.card_title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: auto;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 5px 0 0 5px;
+    transform: rotate(-3.3deg);
+    transform-origin: left top;
+    font-family: Georgia,
+        Times,
+        serif;
+    font-weight: 600;
+    font-size: 1.325rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: rgba(253, 73, 160, 0.75);
+    animation: 0s 0s fly-in 0 reverse both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #E9897E;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+
+}
+
+/* Product Card Fly in animations */
+@media (min-width: 535px) {
+    .card_title {
+        animation: 0.5s 0.25s fly-out 1 both;
+    }
+}
+
+.card:focus .card_title,
+.card:hover .card_title {
+    animation: 0.5s ease-in 0s fly-in 1 both;
+}
+
+/* style the cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: darkgray;
+    border-radius: 5px 25px 5px 50px;
+    transition: transform 0.1s linear, box-shadow 0.2s;
+    align-items: baseline;
+}
+
+/* Style the main hero component */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    height: 30vh;
+}
+
+/* Give me a nice button! */
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;
+    color: #FFF;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 5px #668ad8;
+    border: dashed 1px #FFF;
+    margin-left: 3em;
+}
+
+.btn:hover {
+    border: dotted 1px #FFF;
+}
+
+/* Style a 2 column, row directed section and items */
+.col-2 {
+    display: flex;
+    margin: auto;
+    gap: 15px;
+    width: 80%;
+    flex-direction: row;
+
+}
+
+.col-2-item {
+    display: contents;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+
+}
+
+
+/* Style the main Card container */
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin: auto;
+    max-width: 60vmax;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

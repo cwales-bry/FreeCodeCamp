@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FCC Product Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="FCC-ProductPageStyle.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="logo">
+            <figure>
+
+                <img id="header-img"
+                    src="https://i0.wp.com/msuoc.org/wp-content/uploads/2019/10/cropped-camping-icon-png-20-1.png?fit=512%2C512&ssl=1"
+                    alt="tent tree and moon logo">
+                <figcaption>Free Code with Camping</figcaption>
+            </figure>
+
+        </div>
+
+
+        <div>
+            <nav id="nav-bar">
+
+                <ul>
+                    <a href="#header" class="nav-link">Home</a>
+                    <a href="#video" class="nav-link">Video</a>
+                    <a href="#info" class="nav-link">Product Information</a>
+                    <a href="#form" class="nav-link">Talk to us</a>
+                    <a href="#bottom" class="nav-link">Check out the Footer</a>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <div class="content">
+
+        <section id="hero">
+            <h2>
+                We offer many free classes at Free Code Camp. Send us your email for a list!
+            </h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" name="email" id="email" placeholder="Your Email Address" required>
+                <input id="submit" type="submit" value="On the Way" class="btn">
+
+
+            </form>
+        </section>
+        <section class="col-2">
+
+            <div class="col-2-item">
+                <iframe  id="video" width="325" height="210" src="https://www.youtube-nocookie.com/embed/PkZNo7MFNFg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+
+            </div>
+            <div class="col-2-item">
+                <ul>
+                    <li>Learn JavaScript in 3 hours.</li>
+                    <li>Ok, maybe not, but an intro?</li>
+                    <li>Well, it could be. 3 hours is fast.</li>
+                    <li>Do I want them all centered.</li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <section class="card-container" id="info">
+
+            <div class="card">
+
+
+                <p class="card_title"> Let this be Card 1 </p>
+                <p class="card_content"> The best classes. </p>
+                <p class="card_content">Classes like JavaScript, Python, Security, and more.</p>
+            </div>
+
+
+            <div class="card">
+
+
+                <p class="card_title"> Let this be Card 2 </p>
+                <p class="card_content"> The best prices. </p>
+                <p class="card_content">Usually Free.  Hence the name, Free Code Camp...</p>
+            </div>
+
+
+            <div class="card">
+
+
+                <p class="card_title"> Let this be Card 3 </p>
+                <p class="card_content"> The best instructors. </p>
+                <p class="card_content">Even though they are algorithmic avatars, we promise they are the best teachers.</p>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="footer" id="bottom">
+        <p>Footer</p>
+    </div>
+
+</body>
+
+</html>
