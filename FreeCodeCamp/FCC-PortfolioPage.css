@@ -1,11 +1,57 @@
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.67rem;
     font-weight: 400;
-    color: #e0fdff;
-    
+    color: #a7c3c5;
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
 /* Style the Navigational elements */
 
@@ -17,6 +63,7 @@ body {
     left: 0;
     width: 100%;
     background: #ffcc66;
+    padding: 0;
     z-index: 10;
 }
 
@@ -29,7 +76,7 @@ body {
 .navbar-list a {
   display: block;
   font-size: 2.2rem;
-  padding: 1.2rem;
+  padding: 1.0rem;
   text-decoration: none;
   color: black;
 }
@@ -49,20 +96,53 @@ ul {
 
 
 /* Style the main page elements */
-#welcome-section {
+.welcome-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: black;
+    width: 100;
+    height: 100vh;
     background-image: linear-gradient(180DEG, #000066, #0015BB, #1146FF, #6699FF);
 }
 
-#profile {
-    background-color: blanchedalmond;
+#contact {
+    background-color: rgb(53, 93, 126);
 }
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100;
+    height: 100vh;
+}
+
+.contact-links{
+    display: flex;
+    justify-content: center;
+    width: 100;
+    max-width: 980px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1rem;
+    border-radius: 1px;
+}
+
+#profile-link {
+    align-self: center;
+    font-size: 2.2rem;
+    text-decoration: none;
+
+}
+
+
 
 #projects {
     background-color: firebrick;
@@ -73,12 +153,3 @@ ul {
 
 /* Style the project Cards */
 
-.project-tile {
-    display: block;
-    background-color: #e0fdff;
-}
-
-.project-card {
-    max-width: 250px;
-    display: flexbox;
-}
